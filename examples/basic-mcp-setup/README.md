@@ -200,4 +200,4 @@ Now that you have MCP configured, you can:
 
 ---
 
-**Ready for more?** Continue to the [Simple API tutorial](../simple-api/) to build something with your new MCP powers!
+**Ready for more?** Explore the [full application example](../../src/) to see MCP in action with a real FastAPI application!

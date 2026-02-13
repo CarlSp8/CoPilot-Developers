@@ -21,24 +21,33 @@ Learn the fundamentals of setting up Model Context Protocol with GitHub Copilot.
 
 ---
 
-### 2. Simple API with Copilot
+### 2. Full Application Example
 
-**Location**: `simple-api/`
+**Location**: `../src/`
 
-Build a simple REST API that works seamlessly with GitHub Copilot assistance.
+Explore the complete FastAPI application that demonstrates all concepts in action.
 
 **What you'll learn**:
 - Creating FastAPI endpoints
 - Adding proper documentation
 - Type hints for better AI suggestions
 - Testing with Copilot Chat
+- Real-world MCP integration
 
-**Level**: Beginner  
-**Time**: 30 minutes
+**Level**: Intermediate  
+**Time**: 45 minutes
 
 ---
 
-### 3. Custom MCP Tools
+### 3. Simple API with Copilot
+
+**Coming Soon**
+
+A step-by-step tutorial for building a simple REST API from scratch.
+
+---
+
+### 4. Custom MCP Tools
 
 **Coming Soon**
 
@@ -46,17 +55,14 @@ Learn how to create custom MCP tools for domain-specific operations.
 
 ---
 
-### 4. Full Application Example
+### 5. Advanced Topics
 
-**Current Project**
+**Coming Soon**
 
-The main application in the `src/` directory serves as a complete example of an AI-enhanced application.
-
-**Features**:
-- Complete REST API
-- MCP integration
-- GitHub Copilot workflow
-- Documentation
+More advanced examples covering:
+- Custom MCP server implementation
+- Multi-service orchestration
+- Production deployment strategies
 
 ---
 
