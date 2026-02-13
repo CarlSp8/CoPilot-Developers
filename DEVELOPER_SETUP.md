@@ -186,10 +186,10 @@ Create a file `test.http`:
 GET http://localhost:8000/activities
 
 ### Sign up for Chess Club
-POST http://localhost:8000/activities/Chess Club/signup?email=test@mergington.edu
+POST http://localhost:8000/activities/Chess%20Club/signup?email=test@mergington.edu
 
 ### Unregister from Chess Club
-DELETE http://localhost:8000/activities/Chess Club/unregister?email=test@mergington.edu
+DELETE http://localhost:8000/activities/Chess%20Club/unregister?email=test@mergington.edu
 ```
 
 ### Interactive API Testing

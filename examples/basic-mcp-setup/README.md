@@ -157,7 +157,7 @@ You've successfully set up MCP with GitHub Copilot!
 Now that you have MCP configured, you can:
 
 1. **Explore more capabilities**: Try different prompts and see what Copilot can do
-2. **Build an API**: Move to the [Simple API tutorial](../simple-api/)
+2. **Study the full application**: Explore the [FastAPI example](../../src/) to see real-world usage
 3. **Add more MCP servers**: Connect to other services
 4. **Customize your workflow**: Integrate MCP into your daily development
 
