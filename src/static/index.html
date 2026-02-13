@@ -7,43 +7,97 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="animated-background"></div>
+    
     <header>
-      <h1>Mergington High School</h1>
-      <h2>Extracurricular Activities</h2>
+      <div class="header-content">
+        <img src="https://octodex.github.com/images/octobiwan.jpg" alt="School Mascot" class="mascot" />
+        <div class="header-text">
+          <h1>Mergington High School</h1>
+          <h2>Extracurricular Activities</h2>
+        </div>
+        <div class="user-controls">
+          <button id="login-btn" class="icon-btn" title="Login">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+            </svg>
+          </button>
+          <span id="user-info" class="hidden"></span>
+          <button id="logout-btn" class="hidden icon-btn" title="Logout">Logout</button>
+        </div>
+      </div>
     </header>
 
     <main>
+      <section id="toolbar">
+        <input type="text" id="search-box" placeholder="Search activities..." />
+        <select id="category-filter">
+          <option value="">All Categories</option>
+          <option value="Academic">Academic</option>
+          <option value="Sports">Sports</option>
+          <option value="Arts">Arts</option>
+        </select>
+        <select id="sort-select">
+          <option value="name">Sort by Name</option>
+          <option value="schedule">Sort by Schedule</option>
+          <option value="availability">Sort by Availability</option>
+        </select>
+      </section>
+
       <section id="activities-container">
-        <h3>Available Activities</h3>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
         </div>
       </section>
-
-      <section id="signup-container">
-        <h3>Sign Up for an Activity</h3>
-        <form id="signup-form">
-          <div class="form-group">
-            <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
-          </div>
-          <div class="form-group">
-            <label for="activity">Select Activity:</label>
-            <select id="activity" required>
-              <option value="">-- Select an activity --</option>
-              <!-- Activity options will be loaded here -->
-            </select>
-          </div>
-          <button type="submit">Sign Up</button>
-        </form>
-        <div id="message" class="hidden"></div>
-      </section>
     </main>
 
     <footer>
       <p>&copy; 2023 Mergington High School</p>
+      <div class="footer-mascots">
+        <img src="https://octodex.github.com/images/original.png" alt="Mascot 1" />
+        <img src="https://octodex.github.com/images/daftpunktocat-guy.gif" alt="Mascot 2" />
+        <img src="https://octodex.github.com/images/Professortocat_v2.png" alt="Mascot 3" />
+      </div>
     </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Teacher Login</h3>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <div id="login-message" class="hidden"></div>
+      </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Sign Up for <span id="activity-name"></span></h3>
+        <form id="signup-form">
+          <div class="form-group">
+            <label for="student-email">Student Email:</label>
+            <input type="email" id="student-email" required placeholder="your-email@mergington.edu" />
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+        <div id="signup-message" class="hidden"></div>
+      </div>
+    </div>
+
+    <div id="message" class="hidden"></div>
 
     <script src="app.js"></script>
   </body>

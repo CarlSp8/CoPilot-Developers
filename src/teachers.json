@@ -1,0 +1,15 @@
+{
+  "_comment": "SECURITY WARNING: This file stores passwords in plain text. This is ONLY for development/demonstration purposes. In production, passwords should be hashed using bcrypt or Argon2.",
+  "admin": {
+    "password": "admin123",
+    "name": "Administrator"
+  },
+  "teacher1": {
+    "password": "password123",
+    "name": "Mr. Johnson"
+  },
+  "teacher2": {
+    "password": "password123",
+    "name": "Ms. Smith"
+  }
+}
