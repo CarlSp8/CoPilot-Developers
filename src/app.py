@@ -29,7 +29,9 @@ with open(activities_file, 'r') as f:
 # Load teachers from JSON file
 teachers_file = os.path.join(Path(__file__).parent, "teachers.json")
 with open(teachers_file, 'r') as f:
-    teachers = json.load(f)
+    teachers_data = json.load(f)
+    # Filter out the _comment key if present
+    teachers = {k: v for k, v in teachers_data.items() if not k.startswith('_')}
 
 
 class LoginRequest(BaseModel):
