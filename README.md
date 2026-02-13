@@ -10,6 +10,20 @@ Remember, it's self-paced so feel free to take a break! ☕️
 
 [![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/CarlSp8/CoPilot-Developers/issues/2)
 
+## 🚀 MIT Lab Samples - Advanced LLMs
+
+This repository now includes cutting-edge samples from MIT research labs featuring advanced Large Language Models with new and unreleased models (2025-2026).
+
+### Featured Samples:
+
+- **[FastRL](./mit-lab-samples/fastrl/)** - Efficient reinforcement learning framework (ASPLOS 2026)
+- **[Self-Distillation Fine-Tuning (SDFT)](./mit-lab-samples/sdft/)** - Learn without forgetting
+- **[Student-Note Learning](./mit-lab-samples/student-note-learning/)** - Models that learn like students
+- **[Test-Time Training](./mit-lab-samples/test-time-training/)** - Dynamic adaptation at inference
+- **[Models Catalog](./mit-lab-samples/models-catalog/)** - Comprehensive LLM model information
+
+👉 [Explore MIT Lab Samples →](./mit-lab-samples/)
+
 ---
 
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
