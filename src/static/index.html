@@ -7,39 +7,88 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="animated-background"></div>
+    
     <header>
+      <div class="mascot-container">
+        <img src="https://octodex.github.com/images/inspectocat.jpg" alt="Mascot" class="mascot" />
+      </div>
       <h1>Mergington High School</h1>
       <h2>Extracurricular Activities</h2>
+      <div class="user-icon" id="user-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+        </svg>
+      </div>
     </header>
 
+    <div id="login-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" id="close-login">&times;</span>
+        <h3>Teacher Login</h3>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <div id="login-message" class="hidden"></div>
+      </div>
+    </div>
+
     <main>
+      <section id="toolbar">
+        <div class="toolbar-row">
+          <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search activities..." />
+          </div>
+          <div class="filter-container">
+            <label for="category-filter">Category:</label>
+            <select id="category-filter">
+              <option value="all">All Categories</option>
+              <option value="Academic">Academic</option>
+              <option value="Sports">Sports</option>
+              <option value="Arts">Arts</option>
+            </select>
+          </div>
+          <div class="sort-container">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+              <option value="name">Name</option>
+              <option value="time">Time</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
       <section id="activities-container">
-        <h3>Available Activities</h3>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
         </div>
       </section>
+    </main>
 
-      <section id="signup-container">
-        <h3>Sign Up for an Activity</h3>
+    <div id="signup-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" id="close-signup">&times;</span>
+        <h3>Register Student</h3>
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
+            <input type="email" id="email" required placeholder="student@mergington.edu" />
           </div>
-          <div class="form-group">
-            <label for="activity">Select Activity:</label>
-            <select id="activity" required>
-              <option value="">-- Select an activity --</option>
-              <!-- Activity options will be loaded here -->
-            </select>
-          </div>
-          <button type="submit">Sign Up</button>
+          <input type="hidden" id="selected-activity" />
+          <button type="submit">Register</button>
         </form>
-        <div id="message" class="hidden"></div>
-      </section>
-    </main>
+        <div id="signup-message" class="hidden"></div>
+      </div>
+    </div>
 
     <footer>
       <p>&copy; 2023 Mergington High School</p>
