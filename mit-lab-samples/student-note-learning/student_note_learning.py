@@ -258,8 +258,9 @@ class KnowledgeInternalizer:
     This makes the learning lasting, not just temporary context.
     """
     
-    def __init__(self, model, learning_rate: float = 1e-5, device='cpu'):
+    def __init__(self, model, tokenizer, learning_rate: float = 1e-5, device='cpu'):
         self.model = model
+        self.tokenizer = tokenizer
         self.device = device
         self.optimizer = torch.optim.AdamW(
             model.parameters(),
@@ -354,7 +355,7 @@ class StudentNoteLearningSystem:
                 self.model, self.tokenizer, device
             )
             self.internalizer = KnowledgeInternalizer(
-                self.model, device=device
+                self.model, self.tokenizer, device=device
             )
             
             self.learning_sessions = []
