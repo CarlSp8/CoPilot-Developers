@@ -1,0 +1,13 @@
+{
+  "_comment": "WARNING: This file stores passwords in plaintext for demonstration purposes only. In a production environment, passwords should be hashed using bcrypt or Argon2.",
+  "teachers": [
+    {
+      "username": "admin",
+      "password": "admin123"
+    },
+    {
+      "username": "teacher1",
+      "password": "teacher123"
+    }
+  ]
+}
