@@ -2,6 +2,13 @@
 
 _Learn how to give GitHub Copilot more tools to expand the capabilities of your development workflow. All in less than an hour!_
 
+## 🚀 Quick Links
+
+- **[Contributing Guide](CONTRIBUTING.md)** - Join the team and submit ideas
+- **[Architecture Guide](ARCHITECTURE.md)** - Learn how to build your own CoPilot
+- **[Developer Setup](DEVELOPER_SETUP.md)** - Get your environment ready
+- **[Submit an Idea](https://github.com/CarlSp8/CoPilot-Developers/issues/new?template=idea.md)** - Share your ideas with us!
+
 ## Welcome
 
 - **Who is this for**: Developers looking to enhance their AI-assisted workflows, GitHub Copilot users, and AI enthusiasts.
@@ -42,6 +49,42 @@ If the exercise isn't ready in 20 seconds, please check the [Actions](../../acti
 - If the page shows a failed job, please submit an issue. Nice, you found a bug! 🐛
 
 </details>
+
+## 🤝 How to Build Your Own CoPilot
+
+Want to create a similar AI-enhanced development system? We've got you covered!
+
+### 📚 Documentation
+
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - Comprehensive guide on system architecture and design patterns
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - How to contribute, join the team, and submit ideas
+- **[DEVELOPER_SETUP.md](DEVELOPER_SETUP.md)** - Complete development environment setup guide
+
+### 🎯 Key Concepts
+
+1. **Model Context Protocol (MCP)** - Universal connector for AI tools
+2. **GitHub Copilot Integration** - Enhanced AI assistance with external services
+3. **RESTful API Design** - Building scalable web applications
+4. **AI-Enhanced Workflows** - Combining AI with traditional development
+
+### 💡 Get Involved
+
+We welcome contributions from developers of all skill levels!
+
+- **Submit Ideas**: Use our [idea template](https://github.com/CarlSp8/CoPilot-Developers/issues/new?template=idea.md)
+- **Report Bugs**: Use our [bug report template](https://github.com/CarlSp8/CoPilot-Developers/issues/new?template=bug_report.md)
+- **Join Discussions**: Share thoughts in [Discussions](https://github.com/CarlSp8/CoPilot-Developers/discussions)
+- **Contribute Code**: Fork, code, and submit a PR!
+
+### 🌟 What You'll Learn
+
+By exploring this project and documentation, you'll understand:
+
+- How to integrate MCP servers with GitHub Copilot
+- Best practices for AI-assisted development
+- Building APIs that work well with AI tools
+- Architectural patterns for scalable applications
+- How to provide context for better AI assistance
 
 ---
 
