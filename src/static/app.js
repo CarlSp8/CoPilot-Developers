@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sortSelect = document.getElementById("sort-select");
 
   let allActivities = {};
-  let authToken = null;
+  let authToken = null; // NOTE: In production, use secure session tokens or JWT, not plaintext credentials
   let currentActivityForSignup = null;
 
   // Authentication state

@@ -3,6 +3,13 @@ High School Management System API
 
 A super simple FastAPI application that allows students to view and sign up
 for extracurricular activities at Mergington High School.
+
+SECURITY NOTES FOR PRODUCTION:
+- Passwords should be hashed (bcrypt/Argon2) not stored in plaintext
+- Use session tokens or JWT instead of Basic Auth with every request
+- Implement proper database with ACID properties instead of JSON files
+- Add file locking or use a database to prevent race conditions
+- Use HTTPS in production to protect credentials in transit
 """
 
 from fastapi import FastAPI, HTTPException, Header
@@ -51,7 +58,13 @@ def login(username: str, password: str):
 
 
 def verify_teacher_auth(authorization: str = Header(None)):
-    """Verify teacher authentication from Authorization header"""
+    """Verify teacher authentication from Authorization header
+    
+    NOTE: This is a simple demonstration. In production:
+    - Use hashed passwords, not plaintext comparison
+    - Use session tokens/JWT instead of sending credentials with each request
+    - Implement rate limiting to prevent brute force attacks
+    """
     if not authorization:
         raise HTTPException(status_code=401, detail="Authentication required")
     
@@ -95,6 +108,7 @@ def signup_for_activity(activity_name: str, email: str, authorization: str = Hea
     activity["participants"].append(email)
     
     # Save activities back to JSON file
+    # NOTE: In production, use a database or implement file locking to prevent race conditions
     with open(activities_file, "w") as f:
         json.dump(activities, f, indent=2)
     
@@ -125,6 +139,7 @@ def unregister_from_activity(activity_name: str, email: str, authorization: str 
     activity["participants"].remove(email)
     
     # Save activities back to JSON file
+    # NOTE: In production, use a database or implement file locking to prevent race conditions
     with open(activities_file, "w") as f:
         json.dump(activities, f, indent=2)
     
