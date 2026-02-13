@@ -4,9 +4,11 @@ _Learn how to give GitHub Copilot more tools to expand the capabilities of your 
 
 ## 🚀 Quick Links
 
+- **[🎉 Getting Started Guide](GETTING_STARTED.md)** - **Start here!** Complete overview and navigation
 - **[Contributing Guide](CONTRIBUTING.md)** - Join the team and submit ideas
 - **[Architecture Guide](ARCHITECTURE.md)** - Learn how to build your own CoPilot
 - **[Developer Setup](DEVELOPER_SETUP.md)** - Get your environment ready
+- **[Examples & Tutorials](examples/)** - Hands-on learning materials
 - **[Submit an Idea](https://github.com/CarlSp8/CoPilot-Developers/issues/new?template=idea.md)** - Share your ideas with us!
 
 ## Welcome
