@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gold center circle -->
+  <circle cx="100" cy="100" r="60" fill="#FFD700" stroke="#C0C0C0" stroke-width="4"/>
+  
+  <!-- White rimmed outer ring with chromium effect -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="white" stroke-width="8"/>
+  <circle cx="100" cy="100" r="85" fill="none" stroke="url(#chromiumGradient)" stroke-width="4"/>
+  
+  <!-- Chromium gradient definition -->
+  <defs>
+    <linearGradient id="chromiumGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8E8E8;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#F5F5F5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C0C0C0;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#F5F5F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8E8E8;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="goldShine" cx="40%" cy="40%">
+      <stop offset="0%" style="stop-color:#FFFACD;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Enhanced gold center with shine -->
+  <circle cx="100" cy="100" r="60" fill="url(#goldShine)"/>
+  
+  <!-- ApSciOs text -->
+  <text x="100" y="95" font-family="Arial, sans-serif" font-size="20" font-weight="bold" 
+        text-anchor="middle" fill="#1a237e">ApSciOs</text>
+  <text x="100" y="115" font-family="Arial, sans-serif" font-size="12" 
+        text-anchor="middle" fill="#3949ab">Build System</text>
+</svg>
